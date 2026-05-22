@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .scrol {
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: -1;
+      }
+      .main {
+        background-image: url(../image/coffee1.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        /* overflow-x: hidden;
+        overflow-y: auto; */
+      }
+      .containt {
+        position: relative;
+        padding: 10rem 2rem;
+        color: white;
+        transform-style: preserve-3d;
+      }
+      .containt h1 {
+        font-size: 3.7rem;
+        letter-spacing: 2px;
+      }
+      .containt p {
+        color: rgb(202, 199, 199);
+      }
+      .containt button {
+        width: 10rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(63, 63, 63);
+        border-radius: 8px;
+        margin-left: 20px;
+      }
+      .containt button:hover {
+        background-color: rgb(175, 126, 34);
+        color: black;
+        box-shadow: 5px 5px 15px gray;
+      }
+      .card-main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+      }
+      .card {
+        width: 250px;
+        height: 300px;
+        border: 1px solid gray;
+        box-shadow: 5px 5px 15px black;
+        border-radius: 1.5rem;
+        padding: 10px;
+        background-color: rgb(53, 52, 52);
+      }
+      .card:hover {
+        transform: scale(1.05);
+        transition: 0.5;
+      }
+      img {
+        width: 100%;
+        height: 150px;
+        border-radius: 1.5rem;
+      }
+      .cont h2 {
+        color: rgb(224, 221, 221);
+        font-style: oblique;
+      }
+      .cont p {
+        color: rgb(160, 158, 158);
+      }
+      .btn {
+        border: 1px solid wheat;
+        width: 3rem;
+        background-color: rgb(53, 52, 52);
+        color: white;
+        margin-left: 170px;
+      }
+
+      /* background2 */
+      .main1 {
+        perspective: 10px;
+        background-image: url(../image/coffeebackground2.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      .containt1 {
+        position: relative;
+        color: white;
+        padding: 6rem 3rem;
+        font-size: 1.5rem;
+        font-family: cursive;
+      }
+      .containt1 h1 {
+        font-size: 8rem;
+        font-family: fantasy;
+      }
+      .containt1 button {
+        padding: 0.8rem 1.2rem;
+        background-color: goldenrod;
+        border: 2px goldenrod;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      .containt2 {
+        position:sticky;
+        background-color: brown;
+        width: 100%;
+        height: 40vh;
+        padding: 5rem 4rem;
+      }
+      .containt2 h2 {
+        font-size: 5rem;
+        text-shadow: 5px 5px 10px;
+      }
+      .containt2 ul {
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        font-style: oblique;
+      }
+      /* background3 */
+      .main2{
+        background-image: url(../image/americano.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        /* position:absolute; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="containt">
+        <h1>
+          Enjoy The Most <br />
+          <span style="color: rgb(161, 119, 12)">Delicious Coffee </span>
+        </h1>
+        <p>
+          Start Your Day With Coffee, Enhancing Productivity And Mood. <br />
+          Its Invigorating Aroma Sets A Focused Tone For Trackling Tasks <br />
+          With Renewed Energy And Positivity
+        </p>
+        <br />
+        <br />
+        <button>Explore ↗</button>
+        <button>Order Coffee ☕︎</button>
+      </div>
+
+      <div class="card-main">
+        <div class="card">
+          <div class="image">
+            <img src="../image/americano.webp" alt="coffee" />
+          </div>
+          <div class="cont">
+            <h2>Americano</h2>
+            <p>
+              A coffee drink typically made from equal parts espresso...
+              <br />⭐⭐⭐⭐⭐ (4.9)
+            </p>
+            <br />
+            <button class="btn">More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/blackcoffee.jpg" alt="coffee" />
+          </div>
+          <div class="cont">
+            <h2>Black Coffee</h2>
+            <p>
+              Black coffee is a hot coffee beverage simply made.<br />⭐⭐⭐⭐⭐
+              (4.7)
+            </p>
+            <br />
+            <button class="btn">More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/mochacoffee.jpg" alt="coffee" />
+          </div>
+          <div class="cont">
+            <h2>Mocha</h2>
+            <p>
+              A coffee drink know for its chocolate sweet, rich and...
+              <br />⭐⭐⭐⭐⭐ (4.8)
+            </p>
+            <br />
+            <button class="btn">More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/brevecoffee.webp" alt="coffee" />
+          </div>
+          <div class="cont">
+            <h2>Breve</h2>
+            <p>
+              Breve is a coffee drink made with equal parts espresso and...
+              <br />⭐⭐⭐⭐⭐ (4.9)
+            </p>
+            <br />
+            <button class="btn">More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/coldbrewcoffee.webp" alt="coffee" />
+          </div>
+          <div class="cont">
+            <h2>Cold Brew</h2>
+            <p>
+              Coffee grounds steeped in cold water for a smooth, less acidic
+              taste.
+              <br />⭐⭐⭐⭐⭐ (4.6)
+            </p>
+            <button class="btn">More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- background2 -->
+
+    <div class="main1">
+      <div class="containt1">
+        <span>We've got your morning covered with</span>
+        <h1>Coffee</h1>
+        <p>
+          It is best to start your day with a cup of coffee. Discover
+          <br />the best flavours coffee youu will ever have. We provide
+          <br />the best for our customers.
+        </p>
+        <br />
+        <button>Order Now</button>
+      </div>
+
+      <div class="containt2">
+        <h2>Our Core Coffee Categories</h2>
+        <ul>
+          <li>
+            <b>Whole Beans & Ground Coffee:</b>Ethically sourced and
+            slow-roasted. Perfect for pour-overs, French presses, or moka pots.
+          </li>
+          <li>
+            <b>Specialty Microlots:</b>Small-batch, single-origin coffees that
+            highlight the unique terroir of specific Indian estates.
+          </li>
+          <li>
+            <b>Premium Instant Coffee:</b>Freeze-dried and agglomerated options
+            designed to retain fresh-brewed aroma and flavor in seconds.
+          </li>
+          <li>
+            <b>Easy Pour & Concentrate:</b> Convenient "drop" concentrates and
+            pour-over bags for quick, high-quality brews on the go
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- backgroung3 -->
+    <div class="main2">
+      <div class="containt3">
+        <h1>Americano</h1>
+        <p>
+          The ingredients of an Americano are simple; it’s made by mixing
+          espresso with hot water. The ratio of espresso to hot water can vary,
+          with many cafes serving either a ratio of 1:2 or 1:3, which means you
+          add two to three times the amount of hot water for every shot of
+          espresso. For example, two to three ounces of water would be added for
+          a single shot of espresso, which is around one ounce of coffee. If
+          making an Americano at home, you can adjust the ratio to suit your
+          taste.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

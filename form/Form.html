@@ -3,129 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Registration Form</title>
+
     <style>
-      *{
+      * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
-      .main{
-        background-image: url(../form.html/aesthetic\ image.jpg)
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
       }
-        .container{
-            justify-items: center;
-            font-size: 1.5rem;
-            background-repeat: no-repeat;
-            background-position:center;
-            background-size: cover;
-           color: white;
-        }
-        .input{
+
+      .main {
+        min-height: 100vh;
+        background-image: url(../form/aesthetic\ image.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        color: white;
+        width: 700px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: chartreuse;
+        text-shadow: 0 0 10px white;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        gap: 20px;
+      }
+
+      .form-group label {
+        width: 180px;
+        font-weight: bold;
+      }
+
+      .input {
+        flex: 1;
         border: 2px solid aqua;
-        padding: 0.5rem;
-        border-radius: 0.3rem;
-        margin-left: 25%;
-        }
-        .input:hover{
-          background-color: aquamarine;
-           border: 2px solid blue;
-           transition: 0.5em;
-            transform: scale(1.05);
-        }
-        .butt{
-          text-align: center;
-          margin: 1rem;
-         padding: 5rem ;
-         border-radius: 1rem;
-        }
-        .btn1{
-          padding: 0.6rem;
-          margin-left: 5%;
-          width: 100px;
-          font-size: large;
-          font-weight: bold;
-          box-shadow: 5px 5px 15px solid wheat;
-           border-radius: 1rem;
-        }
-        .btn1:hover{
-          background-color: aqua;
-          border: 2px aqua;
-          box-shadow: 0 0 10px white;
-          transform: scale(1.05);
-        }
-        h1{
-          margin-bottom: 5rem;
-          margin-left: 10%;
-          text-shadow: 5px 5px 15px white;
-          color:chartreuse
-        }
-    
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+        outline: none;
+        font-size: 1rem;
+      }
+
+      .input:hover {
+        background-color: aquamarine;
+        border: 2px solid blue;
+        transition: 0.3s;
+        transform: scale(1.02);
+      }
+
+      .radio-group,
+      .checkbox-group {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      textarea.input {
+        resize: none;
+        height: 100px;
+      }
+
+      .butt {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .btn1 {
+        padding: 0.8rem 1.5rem;
+        width: 120px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: 0.3s;
+      }
+
+      .btn1:hover {
+        background-color: aqua;
+        box-shadow: 0 0 10px white;
+        transform: scale(1.05);
+      }
     </style>
   </head>
+
   <body>
     <section class="main">
       <div class="container">
         <form>
-          <h1>Registration form</h1>
-          <label for="first name">First Name :</label>
-          <input class="input" type="text" placeholder="Enter First Name" />
-          <br /><br />
+          <h1>Registration Form</h1>
 
-          <label for="last name">Last Name :</label>
-          <input class="input" type="text" placeholder="Enter Last Name" />
-          <br /><br />
+          <div class="form-group">
+            <label>First Name :</label>
+            <input class="input" type="text" placeholder="Enter First Name" />
+          </div>
 
-          <label for="email">Email :</label>
-          <input class="input" type="text" placeholder="Enter Email Address" />
-          <br /><br />
+          <div class="form-group">
+            <label>Last Name :</label>
+            <input class="input" type="text" placeholder="Enter Last Name" />
+          </div>
 
-          <label for="password">Password :</label>
-          <input class="input" type="password" />
-          <br /><br />
+          <div class="form-group">
+            <label>Email :</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="Enter Email Address"
+            />
+          </div>
 
-          <label for="gender">Gender :</label>
-          <input class="input" type="radio" name="gender" />Male
-          <input class="input" type="radio" name="gender" />Female
-          <input class="input" type="radio" name="gender" />Other <br /><br />
+          <div class="form-group">
+            <label>Password :</label>
+            <input class="input" type="password" />
+          </div>
 
-          <label for="age">Age :</label>
-          <select class="input" name="age" id="age">
-            <option value="placeholder">Select Age</option>
-            <option value="option">10-15</option>
-            <option value="option">15-20</option>
-            <option value="option">20-25</option>
-            <option value="option">25-30</option>
-          </select>
-          <br /><br />
+          <div class="form-group">
+            <label>Gender :</label>
 
-          <label>Preferences :</label>
-          <label>Acrylic Painting</label>
-          <input type="checkbox" />
-          <label>Oil painting</label>
-          <input type="checkbox" />
-          <label>Water Color Painting</label>
-          <input type="checkbox" />
-          <br /><br />
+            <div class="radio-group">
+              <input type="radio" name="gender" /> Male
 
-          <label for="occupation">occupation :</label>
-          <select class="input" name="occupation" id="occupation">
-            <option value="placeholder">Student</option>
-            <option value="option">Engineering & Technology</option>
-            <option value="option">Medical & Nursing</option>
-            <option value="option">Arts & Humanities</option>
-            <option value="option">Commerce & Business</option>
-            <option value="option">Science(B.Sc/M.Sc)</option>
-          </select>
-          <br /><br />
+              <input type="radio" name="gender" /> Female
 
-          <label for="bio">Bio :</label>
-          <textarea class="input" name="text" id="bio">
-Share few lines about yourself...</textarea
-          >
-          <br /><br />
+              <input type="radio" name="gender" /> Other
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Age :</label>
+
+            <select class="input">
+              <option>Select Age</option>
+              <option>10-15</option>
+              <option>15-20</option>
+              <option>20-25</option>
+              <option>25-30</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Preferences :</label>
+
+            <div class="checkbox-group">
+              <input type="checkbox" /> Acrylic Painting
+
+              <input type="checkbox" /> Oil Painting
+
+              <input type="checkbox" /> Water Color Painting
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Occupation :</label>
+
+            <select class="input">
+              <option>Student</option>
+              <option>Engineering & Technology</option>
+              <option>Medical & Nursing</option>
+              <option>Arts & Humanities</option>
+              <option>Commerce & Business</option>
+              <option>Science(B.Sc/M.Sc)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Bio :</label>
+
+            <textarea class="input" placeholder="Share few lines about yourself..."></textarea>
+          </div>
+
           <div class="butt">
-            <button class=" btn1">RESET</button>
-            <button class=" btn1">SUBMIT</button>
+            <button type="reset" class="btn1">RESET</button>
+
+            <button type="submit" class="btn1">SUBMIT</button>
           </div>
         </form>
       </div>

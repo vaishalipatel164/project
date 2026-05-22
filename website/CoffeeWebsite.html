@@ -4,17 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Website</title>
+    <style>
+      /* *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      } */
+      .main{
+        width: 100%;
+        height: 100vh;
+        perspective: 10px;
+        background-image: url(../image/coffee1.avif);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+             /* position: absolute; */
+           
+      }
+      .para1{
+        padding: 70px;
+
+      }
+      .para1 h1{
+       color: rgb(175, 126, 34);
+       font-size: 3rem;
+      }
+      .card{
+        width: 250px;
+        height: 330px;
+        border-radius: 1.5rem;
+        box-shadow: 5px 5px 10px black;
+         padding: 10px;
+          border: 1px solid gray;
+          background-color: gray;
+      }
+      .card img{
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        top: 5rem;
+      }
+      .para1 button{
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color:white ;
+        background-color:rgb(63, 63, 63);
+        border-radius: 8px;
+        
+      }
+     .para1 button:hover{
+        background-color: rgb(175, 126, 34) ;
+       color: black;
+       box-shadow: 5px 5px 15px gray;
+       }
+       /* .container{
+        display: flex;
+        position: relative;
+        gap: 15px;
+       } */
+       .cont button{
+       
+       }
+    
+    </style>
   </head>
   <body>
-    <section>
-      <div>
-        <h1>Enjoy The Most Delicious Coffee</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores in
-          dignissimos, voluptatum rerum hic eum explicabo minus quidem sunt
-          ratione?
+      <div class="main">
+      <div class="para1">
+        <h1><span style="color: white;">ENJOY THE MOST </span> <br/>DELICIOUS COFFEE</h1>
+        <p style="color: whitesmoke; font-size: 1rem;">
+          Start Your Day With Coffee, Enhancing Productivity And Mood. <br> Its
+          Invigorating Aroma Sets A Focused Tone For Trackling Tasks <br> With
+          Renewed Energy And Positivity.
         </p>
+        <button>Explore ↗</button>
+        <button>Order Coffee ☕︎</button>
       </div>
+      </div>
+
+      <section class="container">
+      <div class="card">
+        <div class="image">
+          <img src="../image/americano.webp" alt="coffee" />
+        </div>
+        <div class="cont">
+          <h2>Americano</h2>
+          <p>A coffee drink typically made from equal parts espresso... <br>⭐⭐⭐⭐⭐ (4.9)</p>
+          <button class="btn">More</button>
+        </div>
+      </div>
+
+       <div class="card">
+        <div class="image">
+          <img src="../image/blackcoffee.jpg" alt="coffee" />
+        </div>
+        <div class="cont">
+          <h2>Black Coffee</h2>
+          <p>Black coffee is a hot coffee beverage simply made.<br>⭐⭐⭐⭐⭐ (4.7)</p>
+          <button>More</button>
+        </div>
+      </div>
+
+       <div class="card">
+        <div class="image">
+          <img src="../image/mochacoffee.jpg" alt="coffee" />
+        </div>
+        <div class="cont">
+          <h2>Mocha</h2>
+          <p>A coffee drink know for its chocolate sweet, rich and... <br>⭐⭐⭐⭐⭐ (4.8)</p>
+          <button>More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image">
+          <img src="../image/brevecoffee.webp" alt="coffee" />
+        </div>
+        <div class="cont">
+          <h2>Breve</h2>
+          <p>Breve is a coffee drink made with equal parts espresso and... <br>⭐⭐⭐⭐⭐ (4.9)</p>
+          <button>More</button>
+        </div>
+      </div>
+     </div>
     </section>
   </body>
 </html>
