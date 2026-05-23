@@ -10,18 +10,15 @@
         margin: 0;
         box-sizing: border-box;
       }
-      .scrol {
-        overflow-y: auto;
-        overflow-x: hidden;
-        z-index: -1;
-      }
+
       .main {
         background-image: url(../image/coffee1.avif);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: auto;
+        padding: 3rem;
         /* overflow-x: hidden;
         overflow-y: auto; */
       }
@@ -100,7 +97,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: auto;
+        padding: 3rem;
       }
       .containt1 {
         position: relative;
@@ -121,11 +119,11 @@
         font-weight: bold;
       }
       .containt2 {
-        position:sticky;
         background-color: brown;
         width: 100%;
-        height: 40vh;
+        height: auto;
         padding: 5rem 4rem;
+        border-radius: 10rem;
       }
       .containt2 h2 {
         font-size: 5rem;
@@ -136,16 +134,76 @@
         font-size: 1.5rem;
         font-style: oblique;
       }
+      .card-top{
+        margin-top: -5rem;
+      }
+      .cont1 {
+        text-align: center;
+        color: goldenrod;
+        font-size: 20px;
+        font-family: monospace;
+      }
+      .price {
+        color: wheat;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+       .btn1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn2 {
+        border: 1px solid wheat;
+        width: 5rem;
+        background-color: rgb(53, 52, 52);
+        color: white;
+        padding: 5px;
+      }
+     
       /* background3 */
-      .main2{
-        background-image: url(../image/americano.webp);
+      .main2 {
+        display: flex;
+        background-image: url(../image/backgroundcoffee4.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
-        /* position:absolute; */
+        height: 70vh; 
+        justify-content: center; 
+        /* align-items: center; */
+        padding: 3rem;
       }
+      .containt3 h1{
+        font-size: 6rem;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 15px black;
+      }
+      .containt3 p{
+        font-size:1.5rem ;
+        font-style: oblique;
+        color: white;
+      }
+      .input{
+      width: 350px;
+      margin-top: 10px;
+      padding: 20px;
+      }
+      .btn3{
+        padding: 15px 25px;
+        background-color: grey;
+        border: 1px solid gray;
+        border-radius: 7rem;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .btn3:hover{
+        background-color: black;
+        box-shadow: 2px 2px 5px white;
+      }
+
     </style>
   </head>
   <body>
@@ -243,6 +301,7 @@
         </div>
       </div>
     </div>
+
     <!-- background2 -->
 
     <div class="main1">
@@ -279,21 +338,104 @@
           </li>
         </ul>
       </div>
+
+      <!-- backgroung-card -->
+
+      <div class="card-main card-top">
+        <div class="card">
+          <div class="image">
+            <img src="../image/americano2.jpg" alt="coffee" />
+          </div>
+          <div class="cont1">
+            <h2>Americano</h2>
+            <p class="price">₹270</p>
+            <hr />
+            <br />
+            <div class="btn1">
+              <button class="btn2">Order</button>
+              <button class="btn2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/blackcoffe3.webp" alt="coffee" />
+          </div>
+          <div class="cont1">
+            <h2>Black Coffee</h2>
+            <p class="price">₹295</p>
+            <hr />
+            <br />
+            <div class="btn1">
+            <button class="btn2">Order</button>
+            <button class="btn2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/mochacoffee2.webp" alt="coffee" />
+          </div>
+          <div class="cont1">
+            <h2>Mocha</h2>
+            <p class="price">₹415</p>
+            <hr />
+            <br />
+            <div class="btn1">
+            <button class="btn2">Order</button>
+            <button class="btn2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/bravecoffee2.webp" alt="coffee" />
+          </div>
+          <div class="cont1">
+            <h2>Breve</h2>
+            <p class="price">₹380</p>
+            <hr />
+            <br />
+            <div class="btn1">
+            <button class="btn2">Order</button>
+            <button class="btn2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="../image/coldbrew2.jpg" alt="coffee" />
+          </div>
+          <div class="cont1">
+            <h2>Cold Brew</h2>
+            <p class="price">₹345</p>
+            <hr />
+            <br />
+            <div class="btn1">
+            <button class="btn2">Order</button>
+            <button class="btn2">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!-- backgroung3 -->
+
     <div class="main2">
       <div class="containt3">
-        <h1>Americano</h1>
-        <p>
-          The ingredients of an Americano are simple; it’s made by mixing
-          espresso with hot water. The ratio of espresso to hot water can vary,
-          with many cafes serving either a ratio of 1:2 or 1:3, which means you
-          add two to three times the amount of hot water for every shot of
-          espresso. For example, two to three ounces of water would be added for
-          a single shot of espresso, which is around one ounce of coffee. If
-          making an Americano at home, you can adjust the ratio to suit your
-          taste.
-        </p>
+        <h1>Contact Us</h1><hr ><br>
+        <p>If you have a question, you can leave a message.</p><br>
+        <form>
+         <input class="input" type="name" placeholder="name"><br>
+         <input class="input" type="email" placeholder="email"><br>
+         <textarea class="input" name="message" placeholder="type a message"></textarea><br><br>
+         <button class="btn3">SEND ↗</button>
+        </form>
       </div>
     </div>
   </body>
