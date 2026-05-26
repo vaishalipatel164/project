@@ -6,49 +6,79 @@
     <title>Table</title>
 </head>
 <style>
-
+    table,tr,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        color: skyblue;
+        padding: 5px 22px;
+       
+    }
+.head th{
+    color: rgb(144, 144, 158);
+    background-color: rgb(11, 11, 82);
+}
+.head-col{
+    color: rgb(202, 26, 26);
+}
+.table{
+    background-color: rgb(53, 53, 80);
+}
+.head1{
+    background-color: rgb(101, 101, 116);
+}
+h1{
+    color: rgb(206, 206, 41);
+}
+p{
+    color:crimson;
+}
+td:hover{
+    background-color: yellow;
+    transform: scale(1.03);
+}
 </style>
 <body>
-    <table border="2">
-        <caption>Table Responsive</caption>
-        <tr>
+    <table border="2" class="table">
+        <h1><span style="color:rgb(34, 34, 187) ;">Table</span> Responsive</h1>
+        <p>Create with love by <b>VAISHALI </b></p><br>
+        <tr class="head">
             <th>Sites</th>
             <th>Views</th>
             <th>licks</th>
             <th>Average</th>
         </tr>
-        <tr>
-            <th>Google</th>
+        <tr class="head1">
+            <th class="head-col">Google</th>
             <td>9518</td>
             <td>6369</td>
             <td>01:32:50</td>
         </tr>
         <tr>
-            <th>Twitter</th>
+            <th class="head-col">Twitter</th>
             <td>7326</td>
             <td>10437</td>
             <td>00:51:22</td>
         </tr>
-        <tr>
-            <th>Amazon</th>
+        <tr class="head1">
+            <th class="head-col">Amazon</th>
             <td>4162</td>
             <td>5327</td>
             <td>00:24:34</td>
         </tr>
-        <tr>
-            <th>LinkedIn</th>
+        <tr">
+            <th class="head-col">LinkedIn</th>
             <td>3654</td>
             <td>2961</td>
             <td>00:12:10</td>
         </tr>
-        <tr>
-            <th>CodePen</th>
+        <tr class="head1">
+            <th class="head-col">CodePen</th>
             <td>2002</td>
             <td>4135</td>
             <td>00:46:19</td>
         </tr>
         <tr>
-            <th>GitHub</th>
+            <th class="head-col">GitHub</th>
             <td>4623</td>
             <td>3486</td>
             <td>00:31:52</td>

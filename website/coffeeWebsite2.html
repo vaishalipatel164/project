@@ -134,7 +134,7 @@
         font-size: 1.5rem;
         font-style: oblique;
       }
-      .card-top{
+      .card-top {
         margin-top: -5rem;
       }
       .cont1 {
@@ -149,7 +149,7 @@
         font-weight: bold;
         font-size: 1.3rem;
       }
-       .btn1 {
+      .btn1 {
         display: flex;
         justify-content: space-between;
       }
@@ -160,37 +160,106 @@
         color: white;
         padding: 5px;
       }
-     
+
       /* background3 */
-      .main2 {
+      .main3 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 30px;
+      }
+
+      .main3::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(../image/coffeebackground4.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        transform: scale(1.1);
+        z-index: -1;
+      }
+      .main3 h1 {
+        text-align: center;
+        font-size: 6rem;
+        color: blue;
+        text-shadow: 5px 5px 10px black;
+      }
+      .containt3 {
+        padding: 50px;
+        font-size: 20px;
+        margin-top: 20px;
+        border-radius: 10rem;
+        justify-items: center;
+      }
+      .containt3 h2 {
+        color: white;
+        font-size: 3rem;
+        font-style: oblique;
+      }
+      .containt3 p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .bg1 {
+        background-color: seagreen;
+      }
+      .bg2 {
+        background-color: rgb(197, 157, 104);
+      }
+      .bg3 {
+        background-color: rgb(53, 136, 168);
+      }
+      .btn4 {
+        margin: 10px;
+        padding: 10px;
+        background-color: brown;
+        border: 2px brown;
+        border-radius: 8px;
+        margin-left: 45%;
+      }
+      .btn4:hover {
+        background-color: black;
+        color: wheat;
+        transform: scale(1.03);
+        box-shadow: 5px 5px 10px black;
+      }
+      .containt3 ul{
+        color:rgb(53, 52, 52);
+         font-style: italic;
+          font-size: 24px;
+      }
+      /* background5 */
+      .main5 {
         display: flex;
         background-image: url(../image/backgroundcoffee4.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 70vh; 
-        justify-content: center; 
+        height: 70vh;
+        justify-content: center;
         /* align-items: center; */
         padding: 3rem;
       }
-      .containt3 h1{
+      .containt5 h1 {
         font-size: 6rem;
         color: white;
         text-transform: uppercase;
         text-shadow: 5px 5px 15px black;
       }
-      .containt3 p{
-        font-size:1.5rem ;
+      .containt5 p {
+        font-size: 1.5rem;
         font-style: oblique;
         color: white;
       }
-      .input{
-      width: 350px;
-      margin-top: 10px;
-      padding: 20px;
+      .input {
+        width: 350px;
+        margin-top: 10px;
+        padding: 20px;
       }
-      .btn3{
+      .btn3 {
         padding: 15px 25px;
         background-color: grey;
         border: 1px solid gray;
@@ -199,14 +268,15 @@
         font-weight: bold;
         font-size: 18px;
       }
-      .btn3:hover{
+      .btn3:hover {
         background-color: black;
         box-shadow: 2px 2px 5px white;
       }
-
     </style>
   </head>
   <body>
+    <!-- background1 -->
+
     <div class="main">
       <div class="containt">
         <h1>
@@ -368,8 +438,8 @@
             <hr />
             <br />
             <div class="btn1">
-            <button class="btn2">Order</button>
-            <button class="btn2">Add to Cart</button>
+              <button class="btn2">Order</button>
+              <button class="btn2">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -384,8 +454,8 @@
             <hr />
             <br />
             <div class="btn1">
-            <button class="btn2">Order</button>
-            <button class="btn2">Add to Cart</button>
+              <button class="btn2">Order</button>
+              <button class="btn2">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -400,8 +470,8 @@
             <hr />
             <br />
             <div class="btn1">
-            <button class="btn2">Order</button>
-            <button class="btn2">Add to Cart</button>
+              <button class="btn2">Order</button>
+              <button class="btn2">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -416,25 +486,93 @@
             <hr />
             <br />
             <div class="btn1">
-            <button class="btn2">Order</button>
-            <button class="btn2">Add to Cart</button>
+              <button class="btn2">Order</button>
+              <button class="btn2">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- backgroung3 -->
+    <!-- background3 -->
 
-    <div class="main2">
-      <div class="containt3">
-        <h1>Contact Us</h1><hr ><br>
-        <p>If you have a question, you can leave a message.</p><br>
+    <div class="main3">
+      <h1>OUR SERVICES</h1>
+      <div class="containt3 bg1">
+        <h2>☀️ BREAK-FAST</h2>
+        <p>
+          Start your morning with delicious and healthy breakfast <br />
+          meals prepared fresh every day. Enjoy sandwiches, pancakes, <br />
+          toast, eggs, and refreshing beverages in a cozy atmosphere.
+        </p><ul>
+          <li>Fresh and hygienic ingredients</li>
+          <li>Healthy and tasty recipes</li>
+          <li>Fast morning service</li>
+          <li>Comfortable dining experience</li>
+        </ul>
+        <button class="btn4">READ MORE</button>
+      </div>
+      <div class="containt3 bg2">
+        <h2>☕ COFFEE</h2>
+        <p>
+          Experience the rich aroma and taste of premium coffee <br />
+          made from freshly roasted beans. From espresso to cappuccino,<br />
+          every cup is crafted with perfection by our expert baristas.
+        </p><ul>
+          <li>Freshly Brewed Coffee</li>
+          <li>Cold Coffee & Iced Latte</li>
+          <li>Espresso & Cappuccino</li>
+          <li>Coffee Bean Selection</li>
+          <li>Quick Takeaway & Delivery</li>
+        </ul>
+        
+        <button class="btn4">READ MORE</button>
+      </div>
+      <div class="containt3 bg3">
+        <h2>📶 FREE WIFI</h2>
+        <p>
+          Stay connected while you relax and enjoy your favorite coffee.<br />
+          We provide high-speed free WiFi for work, study, meetings, <br />or
+          entertainment in a comfortable cafe environment.
+        </p>
+        <ul>
+          <li>Fast and secure internet connection</li>
+          <li>Comfortable seating area</li>
+          <li>Charging points for devices</li>
+          <li>Quiet workspace atmosphere</li>
+          <li>Unlimited Wi-Fi access for customers</li>
+        </ul>
+        <button class="btn4">READ MORE</button>
+      </div>
+    </div>
+
+    <!-- background4 -->
+
+    <div>
+      <div>
+        
+      </div>
+    </div>
+
+    <!-- backgroung5 -->
+
+    <div class="main5">
+      <div class="containt5">
+        <h1>Contact Us</h1>
+        <hr />
+        <br />
+        <p>If you have a question, you can leave a message.</p>
+        <br />
         <form>
-         <input class="input" type="name" placeholder="name"><br>
-         <input class="input" type="email" placeholder="email"><br>
-         <textarea class="input" name="message" placeholder="type a message"></textarea><br><br>
-         <button class="btn3">SEND ↗</button>
+          <input class="input" type="name" placeholder="name" /><br />
+          <input class="input" type="email" placeholder="email" /><br />
+          <textarea
+            class="input"
+            name="message"
+            placeholder="type a message"
+          ></textarea
+          ><br /><br />
+          <button class="btn3">SEND ↗</button>
         </form>
       </div>
     </div>

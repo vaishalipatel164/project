@@ -5,67 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Form</title>
     <style>
-      .container{
+      .container {
         display: flex;
         justify-content: center;
+        
       }
       .main {
         width: 350px;
         height: 450px;
         border: 2px solid rgb(216, 214, 214);
       }
-      .box1{
+      .box1 {
         color: gray;
         font-size: 20px;
-         padding: 1.5rem;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 1.5rem;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       }
-      .bttn{
+      .bttn {
         background-color: rgb(247, 59, 59);
         color: white;
-        border: 2px solid rgb(247, 59, 59) ;
+        border: 2px solid rgb(247, 59, 59);
         padding: 8px;
         width: 5rem;
       }
-      .bttn:hover{
+      .bttn:hover {
         transform: scale(1.08);
       }
-      .box2{
+      .box2 {
         justify-items: center;
-       
       }
-      .bg-color{
-        background-image: conic-gradient(rgb(248, 20, 20),orange,yellow,blue,skyblue); 
+      .bg-color {
+        background-image: conic-gradient(
+          rgb(248, 20, 20),
+          orange,
+          yellow,
+          blue,
+          skyblue
+        );
       }
-      .box2{
-      justify-self: center;
-      color: white;
-     padding: 1rem 3em;
-     font-size: 18px;
-     text-transform: capitalize;
-    
+      .box2 {
+        justify-self: center;
+        color: white;
+        padding: 1rem 3em;
+        font-size: 18px;
+        text-transform: capitalize;
       }
-      .bttn1{
+      .bttn1 {
         width: 15rem;
         padding: 10px;
         font-weight: bold;
         font-size: 18px;
         color: white;
-        box-shadow: 2px  2px 5px black;
+        box-shadow: 2px 2px 5px black;
       }
-      .clr1{
+      .clr1 {
         background-color: blue;
         border: 2px solid blue;
       }
-        .clr2{
+      .clr2 {
         background-color: skyblue;
         border: 2px solid skyblue;
       }
-        .clr3{
+      .clr3 {
         background-color: brown;
         border: 2px solid brown;
       }
-      .box3{
+      .box3 {
         width: 50px;
         height: 50px;
         text-align: center;
@@ -73,12 +79,12 @@
         font-size: 22px;
         box-shadow: 2px 2px 10px black;
       }
-      .or{
+      .or {
         position: fixed;
-      background-color: white;
-      left: 455px;
-      top: 22%;
-     align-content: center;
+        background-color: white;
+        /* left: 455px; */
+        top: 22%;
+        align-content: center;
       }
     </style>
   </head>
@@ -98,19 +104,20 @@
           <button class="bttn">SUBMIT</button>
         </div>
       </div>
+      <div class="box3 or">OR</div>
       <div class="main bg-color">
-      <div class="box2">
-        <h1>
-          Sign in with <br />
-          Social Network
-        </h1>
-        <br />
-        <button class="bttn1 clr1">Log in with Facebook</button><br /><br />
-        <button class="bttn1 clr2">Log in with Twitter</button><br /><br />
-        <button class="bttn1 clr3">Log in with Google+</button><br /><br />
+        <div class="box2">
+          <h1>
+            Sign in with <br />
+            Social Network
+          </h1>
+          <br />
+          <button class="bttn1 clr1">Log in with Facebook</button><br /><br />
+          <button class="bttn1 clr2">Log in with Twitter</button><br /><br />
+          <button class="bttn1 clr3">Log in with Google+</button><br /><br />
+        </div>
       </div>
-      </div>
-       <div class="box3 or">OR</div>
+      <!-- <div class="box3 or">OR</div> -->
     </section>
   </body>
 </html>
