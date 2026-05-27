@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Website</title>
+    <link rel="icon" href="../image/coffeefevicon.png" />
     <style>
       * {
         padding: 0;
@@ -19,8 +20,6 @@
         width: 100%;
         height: auto;
         padding: 3rem;
-        /* overflow-x: hidden;
-        overflow-y: auto; */
       }
       .containt {
         position: relative;
@@ -90,6 +89,7 @@
       }
 
       /* background2 */
+
       .main1 {
         perspective: 10px;
         background-image: url(../image/coffeebackground2.avif);
@@ -99,6 +99,7 @@
         width: 100%;
         height: auto;
         padding: 3rem;
+        scroll-margin-top: 70px;
       }
       .containt1 {
         position: relative;
@@ -162,12 +163,14 @@
       }
 
       /* background3 */
+
       .main3 {
         position: relative;
         width: 100%;
         height: auto;
         overflow: hidden;
         padding: 30px;
+        scroll-margin-top: 70px;
       }
 
       .main3::before {
@@ -225,12 +228,108 @@
         transform: scale(1.03);
         box-shadow: 5px 5px 10px black;
       }
-      .containt3 ul{
-        color:rgb(53, 52, 52);
-         font-style: italic;
-          font-size: 24px;
+      .containt3 ul {
+        color: rgb(53, 52, 52);
+        font-style: italic;
+        font-size: 24px;
       }
+
+      /* background4 */
+
+      .main4 {
+        background-image: url(../image/backgroundimage5.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        color: white;
+        scroll-margin-top: 70px;
+      }
+      .main4 h1 {
+        font-size: 4rem;
+        color: rgb(238, 200, 103);
+        text-shadow: 5px 5px 10px black;
+        text-align: center;
+        padding: 30px;
+      }
+      .main4 p {
+        padding: 20px;
+        text-align: center;
+        color: rgb(243, 238, 209);
+        font-size: 20px;
+        text-shadow: 5px 5px 10px black;
+      }
+      .table1 {
+        background-color: black;
+        padding: 20px;
+        margin-top: 50px;
+        font-size: 22px;
+        display: flex;
+      }
+      .table-left {
+        width: 50%;
+        padding: 20px;
+      }
+      .image {
+        padding-left: 10%;
+      }
+      .image .img1 {
+        height: 300px;
+      }
+      .table-right {
+        padding: 30px;
+        width: 50%;
+        padding-left: 20%;
+      }
+      #image2 {
+        /* border: 2px solid red; */
+        padding-left: 5%;
+        width: 35%;
+      }
+      .table-left {
+        width: 50%;
+      }
+      #img2 {
+        width: 100%;
+        height: 300px;
+      }
+      .imgbtn {
+        margin-top: 20px;
+        padding: 15px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: black;
+        border: 2px solid white;
+        color: yellow;
+        font-size: 22px;
+      }
+      .t-row {
+        color: yellow;
+        font-size: 20px;
+      }
+      .paragraph {
+        padding: 30px;
+        display: flex;
+      }
+      .pre {
+        color: wheat;
+        font-size: 24px;
+        margin-right: 20%;
+      }
+      .prebtn1 {
+        border-radius: 20px;
+        background-color: black;
+        border: 2px solid white;
+        color: yellow;
+        font-size: 24px;
+        width: 20rem;
+        padding: 20px;
+        margin-left: 50%;
+      }
+
       /* background5 */
+
       .main5 {
         display: flex;
         background-image: url(../image/backgroundcoffee4.jpg);
@@ -240,8 +339,8 @@
         width: 100%;
         height: 70vh;
         justify-content: center;
-        /* align-items: center; */
         padding: 3rem;
+        scroll-margin-top: 70px;
       }
       .containt5 h1 {
         font-size: 6rem;
@@ -272,12 +371,108 @@
         background-color: black;
         box-shadow: 2px 2px 5px white;
       }
+
+      /* footer */
+
+      .main6 {
+        background-color: rgb(112, 111, 111);
+        padding: 30px;
+      }
+      .containt6{
+        display: flex;
+      }
+
+      .heading {
+        font-weight: bold;
+        text-align: center;
+      }
+      .heading h2 {
+        color: white;
+        font-size: 2rem;
+      }
+      .heading h2:hover {
+        color: gold;
+      }
+      .heading pre {
+        padding: 20px;
+        font-size: 1.5rem;
+      }
+      .heading pre:hover {
+        color:brown;
+      }
+      .last-para{
+        text-align: center;
+        font-size: 26px;
+        font-weight: bolder;
+      }
+
+/* navbar */
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-wapper{
+    background-color:rgb(131, 56, 56);
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;   /* fixed */
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-list{
+    display: flex;
+    list-style: none;
+    
+}
+
+.navbar-list li{
+    margin-left: 30px;
+}
+
+.navbar-list li a{
+  
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(241, 175, 7);
+}
+
     </style>
   </head>
   <body>
+    
+     <!-- /* navbar */ -->
+
+     <section class="navbar">
+      <div class="navbar-wapper">
+        <img class="logo" src="../image/coffeefevicon.png" alt="">
+        <ul class="navbar-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+
+      </div>
+
+     </section>
+
     <!-- background1 -->
 
-    <div class="main">
+    <div class="main" id="home">
       <div class="containt">
         <h1>
           Enjoy The Most <br />
@@ -374,7 +569,7 @@
 
     <!-- background2 -->
 
-    <div class="main1">
+    <div class="main1" id="about">
       <div class="containt1">
         <span>We've got your morning covered with</span>
         <h1>Coffee</h1>
@@ -496,7 +691,7 @@
 
     <!-- background3 -->
 
-    <div class="main3">
+    <div class="main3" id="service">
       <h1>OUR SERVICES</h1>
       <div class="containt3 bg1">
         <h2>☀️ BREAK-FAST</h2>
@@ -504,7 +699,8 @@
           Start your morning with delicious and healthy breakfast <br />
           meals prepared fresh every day. Enjoy sandwiches, pancakes, <br />
           toast, eggs, and refreshing beverages in a cozy atmosphere.
-        </p><ul>
+        </p>
+        <ul>
           <li>Fresh and hygienic ingredients</li>
           <li>Healthy and tasty recipes</li>
           <li>Fast morning service</li>
@@ -518,14 +714,15 @@
           Experience the rich aroma and taste of premium coffee <br />
           made from freshly roasted beans. From espresso to cappuccino,<br />
           every cup is crafted with perfection by our expert baristas.
-        </p><ul>
+        </p>
+        <ul>
           <li>Freshly Brewed Coffee</li>
           <li>Cold Coffee & Iced Latte</li>
           <li>Espresso & Cappuccino</li>
           <li>Coffee Bean Selection</li>
           <li>Quick Takeaway & Delivery</li>
         </ul>
-        
+
         <button class="btn4">READ MORE</button>
       </div>
       <div class="containt3 bg3">
@@ -548,15 +745,143 @@
 
     <!-- background4 -->
 
-    <div>
-      <div>
-        
+    <div class="main4" id="menu">
+      <h1>COFFEE MENU</h1>
+      <hr style="width: 500px; justify-self: center" />
+      <p>
+        we offer the lowest price in the market <br />
+        and get the same coffee delight experience.
+      </p>
+      <hr style="width: 500px; justify-self: center" />
+      <div class="table1">
+        <table class="table-left">
+          <tr class="t-row">
+            <th>Premium Coffee</th>
+            <td>80z Price</td>
+            <td>120z Price</td>
+          </tr>
+          <tr>
+            <td>Bengaluru coffee</td>
+            <td>₹210</td>
+            <td>₹260</td>
+          </tr>
+          <tr>
+            <td>Barako</td>
+            <td>₹240</td>
+            <td>₹290</td>
+          </tr>
+          <tr>
+            <td>Kalinga</td>
+            <td>₹200</td>
+            <td>₹250</td>
+          </tr>
+          <tr>
+            <td>Sagada Medium Roast</td>
+            <td>₹230</td>
+            <td>₹280</td>
+          </tr>
+          <tr>
+            <td>Sagada Dark Roast</td>
+            <td>₹250</td>
+            <td>₹310</td>
+          </tr>
+          <tr>
+            <td>Espresso</td>
+            <td>₹220</td>
+            <td>₹270</td>
+          </tr>
+          <tr>
+            <td>Excelsa</td>
+            <td>₹220</td>
+            <td>₹270</td>
+          </tr>
+          <tr>
+            <td>Arabica Medium Roast</td>
+            <td>₹260</td>
+            <td>₹320</td>
+          </tr>
+        </table>
+        <div class="image">
+          <img class="img1" src="../image/mochacoffee2.webp" alt="" />
+          <button class="imgbtn">Espresso</button>
+        </div>
+      </div>
+
+      <div class="table1 table-effect">
+        <div id="image2">
+          <img id="img2" src="../image/mochacoffee.jpg" alt="" />
+          <button class="imgbtn">Mocha</button>
+        </div>
+        <table class="table-right">
+          <tr class="t-row">
+            <th>Premium Coffee</th>
+            <td>80z Price</td>
+            <td>120z Price</td>
+          </tr>
+          <tr>
+            <td>Bengaluru coffee</td>
+            <td>₹210</td>
+            <td>₹260</td>
+          </tr>
+          <tr>
+            <td>Barako</td>
+            <td>₹240</td>
+            <td>₹290</td>
+          </tr>
+          <tr>
+            <td>Kalinga</td>
+            <td>₹200</td>
+            <td>₹250</td>
+          </tr>
+          <tr>
+            <td>Sagada Medium Roast</td>
+            <td>₹230</td>
+            <td>₹280</td>
+          </tr>
+          <tr>
+            <td>Sagada Dark Roast</td>
+            <td>₹250</td>
+            <td>₹310</td>
+          </tr>
+          <tr>
+            <td>Espresso</td>
+            <td>₹220</td>
+            <td>₹270</td>
+          </tr>
+          <tr>
+            <td>Excelsa</td>
+            <td>₹220</td>
+            <td>₹270</td>
+          </tr>
+          <tr>
+            <td>Arabica Medium Roast</td>
+            <td>₹260</td>
+            <td>₹320</td>
+          </tr>
+        </table>
+      </div>
+      <div class="paragraph">
+        <div class="pre">
+          <pre>
+      "We also accept 120z order"
+      Shipping delivery too applies as
+      additional charge per location
+      we are open to resellers.
+         </pre
+          >
+        </div>
+        <div class="pre-btn">
+          <button class="prebtn1">
+            ENJOY EVERY CUP <br />
+            WITH US.
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- backgroung5 -->
 
-    <div class="main5">
+    <div class="main5" id="contact-us">
       <div class="containt5">
         <h1>Contact Us</h1>
         <hr />
@@ -574,6 +899,53 @@
           ><br /><br />
           <button class="btn3">SEND ↗</button>
         </form>
+      </div>
+    </div>
+
+    <!-- background6 -->
+
+    <div class="main6">
+      <div class="containt6">
+      <div class="heading">
+        <h2>Address</h2>
+        <pre>
+          B-29/43
+          Sankat Mochan,
+          Varanasi 221001,
+          Uttar Pradesh.
+        </pre>
+      </div>
+
+      <div class="heading">
+        <h2>E-mail</h2>
+        <pre>
+          info@infodeltasys.com
+          164patelvaishali@gmail.com
+
+        </pre>
+      </div>
+
+      <div class="heading">
+        <h2>Call Us</h2>
+        <pre>
+          +91-8090387120
+          +91-6387722743
+          +91-9889685276
+        </pre>
+      </div>
+
+      <div class="heading">
+        <h2>Opening Hours</h2>
+        <pre>
+          Sat-Tue:8:00AM-11:00PM
+          Fri:3:00PM-11:00PM
+        </pre>
+      </div>
+      </div>
+      <div class="last-para">
+        <p>
+          Design By |<span style="color:crimson"> Vaishali Designer </span>|
+        </p>
       </div>
     </div>
   </body>
