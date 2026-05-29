@@ -262,20 +262,21 @@
       }
       .table1 {
         background-color: black;
-        padding: 20px;
+        padding: 30px;
         margin-top: 50px;
         font-size: 22px;
         display: flex;
+        box-shadow: 5px 5px 15px white;
       }
       .table-left {
         width: 50%;
         padding: 20px;
       }
-      .image {
+      .image1 {
         padding-left: 10%;
       }
-      .image .img1 {
-        height: 300px;
+       .img1{
+        height: 280px;
       }
       .table-right {
         padding: 30px;
@@ -284,7 +285,7 @@
       }
       #image2 {
         /* border: 2px solid red; */
-        padding-left: 5%;
+        padding-left: -5%;
         width: 35%;
       }
       .table-left {
@@ -292,7 +293,7 @@
       }
       #img2 {
         width: 100%;
-        height: 300px;
+        height: 250px;
       }
       .imgbtn {
         margin-top: 20px;
@@ -378,7 +379,7 @@
         background-color: rgb(112, 111, 111);
         padding: 30px;
       }
-      .containt6{
+      .containt6 {
         display: flex;
       }
 
@@ -398,66 +399,77 @@
         font-size: 1.5rem;
       }
       .heading pre:hover {
-        color:brown;
+        color: brown;
       }
-      .last-para{
+      .last-para {
         text-align: center;
         font-size: 26px;
         font-weight: bolder;
       }
 
-/* navbar */
-.navbar{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
+      /* navbar */
+      .navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+      }
 
-.navbar-wapper{
-    background-color:rgb(131, 56, 56);
-    width: 100%;
-    height: 80px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      .navbar-wapper {
+        background-color: rgb(131, 56, 56);
+        width: 100%;
+        height: 80px;
 
-    padding: 0 50px;   /* fixed */
-    box-sizing: border-box;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.logo{
-    width: 60px;
-    height: 60px;
-}
+        padding: 0 50px; /* fixed */
+        box-sizing: border-box;
+      }
 
-.navbar-list{
-    display: flex;
-    list-style: none;
-    
-}
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
 
-.navbar-list li{
-    margin-left: 30px;
-}
+      .navbar-list {
+        display: flex;
+        list-style: none;
+      }
 
-.navbar-list li a{
-  
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(241, 175, 7);
-}
+      .navbar-list li {
+        margin-left: 30px;
+      }
 
+      .navbar-list li a {
+        text-decoration: none;
+        font-size: 22px;
+        color: rgb(241, 175, 7);
+        position: relative;
+      }
+      .navbar-list li a::after {
+        background-color: black;
+        content: " ";
+        width: 0px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+        
+      }
+      .navbar-list li a:hover::after{
+        width: 100%;
+      } 
     </style>
   </head>
   <body>
-    
-     <!-- /* navbar */ -->
+    <!-- /* navbar */ -->
 
-     <section class="navbar">
+    <section class="navbar">
       <div class="navbar-wapper">
-        <img class="logo" src="../image/coffeefevicon.png" alt="">
+        <img class="logo" src="../image/coffeefevicon.png" alt="" />
         <ul class="navbar-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -465,10 +477,8 @@
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
         </ul>
-
       </div>
-
-     </section>
+    </section>
 
     <!-- background1 -->
 
@@ -801,7 +811,7 @@
             <td>₹320</td>
           </tr>
         </table>
-        <div class="image">
+        <div class="image1">
           <img class="img1" src="../image/mochacoffee2.webp" alt="" />
           <button class="imgbtn">Espresso</button>
         </div>
@@ -906,45 +916,49 @@
 
     <div class="main6">
       <div class="containt6">
-      <div class="heading">
-        <h2>Address</h2>
-        <pre>
+        <div class="heading">
+          <h2>Address</h2>
+          <pre>
           B-29/43
           Sankat Mochan,
           Varanasi 221001,
           Uttar Pradesh.
-        </pre>
-      </div>
+        </pre
+          >
+        </div>
 
-      <div class="heading">
-        <h2>E-mail</h2>
-        <pre>
+        <div class="heading">
+          <h2>E-mail</h2>
+          <pre>
           info@infodeltasys.com
           164patelvaishali@gmail.com
 
-        </pre>
-      </div>
+        </pre
+          >
+        </div>
 
-      <div class="heading">
-        <h2>Call Us</h2>
-        <pre>
+        <div class="heading">
+          <h2>Call Us</h2>
+          <pre>
           +91-8090387120
           +91-6387722743
           +91-9889685276
-        </pre>
-      </div>
+        </pre
+          >
+        </div>
 
-      <div class="heading">
-        <h2>Opening Hours</h2>
-        <pre>
+        <div class="heading">
+          <h2>Opening Hours</h2>
+          <pre>
           Sat-Tue:8:00AM-11:00PM
           Fri:3:00PM-11:00PM
-        </pre>
-      </div>
+        </pre
+          >
+        </div>
       </div>
       <div class="last-para">
         <p>
-          Design By |<span style="color:crimson"> Vaishali Designer </span>|
+          Design By |<span style="color: crimson"> Vaishali Designer </span>|
         </p>
       </div>
     </div>
