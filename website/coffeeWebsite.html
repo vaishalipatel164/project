@@ -286,7 +286,7 @@
       #image2 {
         /* border: 2px solid red; */
         padding-left: -5%;
-        width: 35%;
+        width: 30%;
       }
       .table-left {
         width: 50%;
@@ -374,7 +374,7 @@
       }
 
       /* footer */
-
+      
       .main6 {
         background-color: rgb(112, 111, 111);
         padding: 30px;
@@ -382,7 +382,6 @@
       .containt6 {
         display: flex;
       }
-
       .heading {
         font-weight: bold;
         text-align: center;
@@ -408,40 +407,34 @@
       }
 
       /* navbar */
+
       .navbar {
         width: 100%;
         position: fixed;
         top: 0;
         z-index: 1000;
       }
-
       .navbar-wapper {
         background-color: rgb(131, 56, 56);
         width: 100%;
         height: 80px;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding: 0 50px; /* fixed */
+        padding: 0 50px; 
         box-sizing: border-box;
       }
-
       .logo {
         width: 60px;
         height: 60px;
       }
-
       .navbar-list {
         display: flex;
         list-style: none;
       }
-
       .navbar-list li {
         margin-left: 30px;
       }
-
       .navbar-list li a {
         text-decoration: none;
         font-size: 22px;
@@ -457,11 +450,57 @@
         left: 0;
         bottom: -5px;
         transition: 0.3s;
-        
-      }
+        }
       .navbar-list li a:hover::after{
         width: 100%;
-      } 
+      }
+      
+      /* responsive */
+      
+      @media (max-width:768px){
+    
+      .logo{
+        width: 40px;
+        height: 40px;
+        margin-left: -40px;
+        
+      }
+      .navbar-list li {
+        margin-left: 10px;
+        
+      }
+      .navbar-list li a {
+        
+        font-size: 14px;
+
+      }
+      .containt {
+        padding: 5rem 2rem;
+       
+      }
+      .containt h1 {
+        font-size: 2.7rem;
+        
+      }
+
+      .containt button {
+  
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      .main1 {
+        padding: 1rem;
+       
+      }
+      .containt1 {
+        padding: 2rem 1rem;
+        font-size: 1rem;
+      }
+      .containt1 h1 {
+        font-size: 4rem;
+        
+      }
+      }
     </style>
   </head>
   <body>
@@ -592,7 +631,7 @@
         <button>Order Now</button>
       </div>
 
-      <div class="containt2">
+      <!-- <div class="containt2">
         <h2>Our Core Coffee Categories</h2>
         <ul>
           <li>
@@ -612,11 +651,11 @@
             pour-over bags for quick, high-quality brews on the go
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- backgroung-card -->
 
-      <div class="card-main card-top">
+      <!-- <div class="card-main card-top">
         <div class="card">
           <div class="image">
             <img src="../image/americano2.jpg" alt="coffee" />
@@ -697,11 +736,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- background3 -->
 
-    <div class="main3" id="service">
+    <!-- <div class="main3" id="service">
       <h1>OUR SERVICES</h1>
       <div class="containt3 bg1">
         <h2>☀️ BREAK-FAST</h2>
@@ -751,10 +790,10 @@
         </ul>
         <button class="btn4">READ MORE</button>
       </div>
-    </div>
+    </div> -->
 
     <!-- background4 -->
-
+<!-- 
     <div class="main4" id="menu">
       <h1>COFFEE MENU</h1>
       <hr style="width: 500px; justify-self: center" />
@@ -887,11 +926,11 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- backgroung5 -->
 
-    <div class="main5" id="contact-us">
+    <!-- <div class="main5" id="contact-us">
       <div class="containt5">
         <h1>Contact Us</h1>
         <hr />
@@ -910,11 +949,11 @@
           <button class="btn3">SEND ↗</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- background6 -->
 
-    <div class="main6">
+    <!-- <div class="main6">
       <div class="containt6">
         <div class="heading">
           <h2>Address</h2>
@@ -961,6 +1000,6 @@
           Design By |<span style="color: crimson"> Vaishali Designer </span>|
         </p>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
